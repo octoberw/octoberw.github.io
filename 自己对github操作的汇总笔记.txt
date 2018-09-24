@@ -1,0 +1,26 @@
+$ ssh-keygen-t rsa-C "your_email@youremail.com"	自己的邮箱
+
+找到  .ssh  文件的  id_rsa  文件，然后复制里面的密钥
+
+打开你GitHub的设置界面，找到SSH and GPG keys这个选项之后，在网页右上角有一个添加新的SSH keys
+
+$ ssh -T git@github.com 	测试是否绑定成功
+
+$ git config --global user.name "your name"
+$ git config --global user.name "你注册github的邮箱"
+
+到github找到你自己创建的仓库，然后复制SSH的网址
+
+回到git bash 定位到D盘 cd /D 大写D
+然后输出
+$ git clone 复制SSH的网址
+
+然后D盘就会出现你在github创建的仓库
+
+ls可以查看这个文件里面的文件
+
+$ git add test.txt(本地仓库里面的文件名)
+$ git commit -m "上传的文件的备注"
+$ git push origin master 然后出现页面登录github账号
+
+完成.....
