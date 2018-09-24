@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	body{
+		margin: 0;
+	}
+		.layout{
+			width: 980px;
+			height: 1000px;
+			/*text-align: center; 这个是盒子里面内容居中*/
+			margin: auto;
+		}
+		.meituan{
+			display: inline-block;
+			background-image: url("2.png");
+			width: 83px;
+			height: 54px;
+			background-position: -188px -808px;
+			margin: 40px auto 30px;
+			
+		}
+		.img{
+			width: 980px;
+			height: 370px;
+			/*display: inline-block;*/
+		}
+		.denglu{
+			width: 242px;
+			display: inline-block;
+			float: right;
+			margin-top: 40px;
+			margin-right:130px;
+		}
+		.denglu .phone{
+			display: inline-block;
+			margin-right: 12px;
+			line-height: 20.8px;
+			text-decoration: none;
+			color: #666;
+			font-size: 12px;
+			float: right;
+		}
+		i{
+			position: absolute;
+			background: url(2.png) no-repeat;
+			color: transparent;
+			margin-top: 4px;
+			width: 14px;
+			height: 14px;
+			background-position: -877px -677px;
+		}
+		.denglu .zhanghao{
+			display: inline-block;
+			width: 242px;
+			height: 20.8px;
+			margin-bottom: 8px;
+			font-weight: 400;
+			color: #666;
+		}
+		.denglu input{
+			width: 230px;
+			height: 24px;
+			border-color: #999;
+			border: 1px solid #aaa;
+			padding: 5px;
+			color: #666;
+		}
+		.denglu .cb{
+			width: 15px;
+			height: 15px;
+			display: inline-block;
+			margin:0;
+		}
+		.denglu .pw {
+			font-size: 12px;
+			text-decoration: none;
+			color: #2bb8aa;
+			float: right;
+		}
+		.denglu .ip_denglu{
+			width: 100%;
+			height: 34.8px;
+			color: white;
+			background-color: #2db3a6;
+			border-color: #008177;
+			font-weight: 700;
+			padding: 7px 20px 6px;
+			font-size: 14px;
+			border-radius: 2px;
+			border-width: 0 0 1px;
+			margin-top: 13px;
+		}
+		.phone:hover,.pw:hover{
+			text-decoration: underline;
+		}
+		.denglu .qq{
+			display: inline-block;
+			width: 17px;
+			height: 18px;
+			background-image: url(2.png);
+			margin-right:20px;
+			background-position: -1250px -491px;
+		}
+		.denglu .sina{
+			display: inline-block;
+			width: 19px;
+			height: 18px;
+			background-image: url(2.png);
+			background-position: -1249px -545px;
+		}
+		.foot{
+			width: 100%;
+			height:50px;
+			border-top: 1px solid #EEE;
+			border-bottom: 1px solid #EEE;
+			margin-top: 70px;
+		}
+		.foot .foot_ul{
+			display: inline-block;
+			list-style: none;
+			padding-left: 0;
+		}
+		.foot .foot_ul li{
+			float: left;
+			width: 60px;
+			height: 13.6px;
+			line-height: 8.6px;
+			margin-right: 15px;
+			margin-top: 3px;
+			border-right: 1px solid #EEE;
+		}
+		.foot .foot_ul li a{
+			/*display: inline-block;*/
+			text-decoration: none;
+			line-height: 13.6px;
+			font-size: 12px;
+			color: #999;
+		}
+		.last p,.last a{
+			display: inline-block;
+			color: #999;
+			font-size: 12px;
+			text-decoration: none;
+			margin-top: 20px;
+		}
+		.last a:hover{
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>	
+	<div class="layout">	
+		<a class="meituan" href="http://gz.meituan.com/"></a>
+		<div class="img">
+			<img src="3.jpg" alt="111">
+			<div class="denglu">
+				<form>
+					<div class="zhanghao">账号登陆
+						<a class="phone" href="#">手机动态登录<i>11</i></a>
+					</div><br> 
+					<input type="text" placeholder="手机号/用户名/邮箱" ><br>
+					<input style="margin-top: 12px" type="text" placeholder="密码"><br>
+					<div style="width: 242px; height: 21px; margin-top: 10px;">
+						<input class="cb" type="checkbox" id="auto"><label style="font-size: 12px;vertical-align: top; display: inline-block;" for="auto">7天内自动登录</label>
+						<a class="pw" href="https://passport.meituan.com/account/retrievepassword?service=www&continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttps%253A%252F%252Fgz.meituan.com%252F">忘记密码？</a>
+					</div>
+					<input class="ip_denglu" type="submit" value='登录'>
+					<p style="width: 100%; color: #666; float: left; margin-top: 8px;">
+						还没有账号？
+						<a style="color: #2bb8aa; font-size: 16px; text-decoration: none;" href="https://passport.meituan.com/account/unitivesignup?service=www&continue=http%3A%2F%2Fwww.meituan.com%2Faccount%2Fsettoken%3Fcontinue%3Dhttps%253A%252F%252Fgz.meituan.com%252F">免费注册</a>
+					</p>
+					<p style="color: #666; font-size: 14px;" >——— 用户合作网站账号登录 ———</p>
+					<div style="width: 100% ;height:18px; text-align: center;">
+						<a class="qq" href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&redirect_uri=https%3A%2F%2Fpassport.meituan.com%2Faccount%2Fcallback%2Ftencent&client_id=214506"></a>
+					 	<a class="sina" href="https://api.weibo.com/oauth2/authorize?response_type=code&redirect_uri=https%3A%2F%2Fpassport.meituan.com%2Faccount%2Fcallback%2Fsina&client_id=579809138"></a>
+					</div>
+					 
+				</form>
+			</div>
+		</div>
+		<div class="foot">
+			<ul class="foot_ul">
+				<li><a href="">关于美团</a></li>
+				<li><a href="">美团承诺</a></li>
+				<li><a href="">加入我们</a></li>
+				<li><a href="">商家入驻</a></li>
+				<li><a href="">帮助中心</a></li>
+				<li style="border-right: 0 solid white;" ><a href="">美团手机版</a></li>
+			</ul>
+			<a style="width: 276px; height: 24px; background: url(3.png) no-repeat; float: right; margin-top: 14px; margin-right:103px;" href="http://www.meituan.com/commitment/"></a>
+			<div class="last">
+				<p>© 2018</p>
+				<a href="">美团网代购</a>
+				<p>meituan.com</p>
+				<a href="">京ICP证070791号</a>
+				<p>京公网安备11010502025545</p>
+				<a href="">电子公告服务规则</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
