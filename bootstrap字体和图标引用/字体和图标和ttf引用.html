@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="asset/css/bootstrap.css">
+    	<style type="text/css">
+    		@font-face {
+    			font-family: icf;
+    			src: url('bdfont.ttf');
+    		}
+    		div.icf::before{
+    			font-family: icf;
+    			content: '\e001 \e003 \e002 \e004 \e005';
+    			color: black;
+    			font-size: 70px;
+    		}
+    		span.ic:after{
+    			font-family: icf;
+    			content: '\e002';
+    			color: lightcoral;
+    			font-size: 50px;
+    		}
+    	</style>
+	</head>
+	<body>
+		<button type="button" class="btn btn-default" aria-label="Left Align">
+		  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+		</button>
+		
+		<button type="button" class="btn btn-default btn-lg">
+		  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+		</button>
+		<hr />
+		<hr />
+		<hr />
+		<div class="icf">11</div>
+		<span class="ic">22</span>
+	</body>
+</html>
