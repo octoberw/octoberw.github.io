@@ -1,0 +1,47 @@
+html,body{
+	height: 100%;
+}
+body{
+	position: relative;
+}
+.container{
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.container .row .div:nth-child(2){
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 10px;
+	box-shadow: 0 0 30px 2px black;}
+.container .row .div:nth-child(2) h2{
+	margin-top: 20px;
+	text-align: center;
+	color: #333;
+	
+}
+.container .row .div:nth-child(2) .col-sm-4 .btn,
+.container .row .div:nth-child(2) .col-sm-6 .btn{
+	padding: 3px 30px;
+	margin-left: 0;
+	margin-bottom: 20px;
+}
+.noborder{
+	border-left: none;
+}
+.tubiao{
+	background-color: white;
+}
+.has-success .input-group-addon {
+  color: #333;
+  background-color: #FFFFFF;
+  border-color: #3c763d;
+}
+.yanzhengBK{
+	border-color: #3c763d;
+}
+input{
+	outline: none;
+}
+/*----------login end------------*/

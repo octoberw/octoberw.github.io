@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<link rel="stylesheet" href="lib/css/bootstrap.css" />
+	<link rel="stylesheet" href="css/login.css" />
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 col-sm-9 div">
+				<h2>登录</h2>
+				<form class="form-horizontal" id="loginForm">
+					<div class="form-group ">
+						<label  class="control-label col-sm-2 hidden-xs">账号:</label>
+						<div class="col-sm-9">
+							<div class="input-group has-success">
+								<span class="input-group-addon">
+									<span class=" glyphicon glyphicon-user"></span>
+								</span>
+								<input placeholder="账户" required="required" name="username" id="zh" type="text" class="form-control noborder" data-toggle="tooltip" data-trigger="focus" data-placement="top" title="账号不能为空" />
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group ">
+						<label  class="control-label col-sm-2 hidden-xs">密码:</label>
+						<div class="col-sm-9">
+							<div class="input-group has-success">
+								<span class="input-group-addon">
+									<span class=" glyphicon glyphicon-lock"></span>
+								</span>
+								<input placeholder="密码" required="required" name="password" id="mm" type="password" class="form-control noborder has-success" data-toggle="tooltip" data-trigger="focus" data-placement="top" title="密码不能为空" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-group ">
+						<label  class="control-label col-sm-2 hidden-xs">验证码:</label>
+						<div class="col-sm-4">
+							<div class="input-group has-success">
+								
+								<input id="yz" value="" disabled="disabled" type="text" class="form-control" style="border-radius: 3px;" data-toggle="tooltip" data-trigger="focus" data-placement="top" title="验证码不能为空" />
+							</div>
+						</div>
+						<div class="col-sm-3">
+								<img src="https://passport.baidu.com/cgi-bin/genimage?njG9006e2bc4d7fe23e020d1512de015b14c7f3de06020113a0&v=1535090174559"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">						
+						<div class="col-sm-6" style="margin-left: 0;">
+							<button type="submit" class="btn btn-primary" data-toggle="modal" data-loading-text="正在登录" data-target="#myModal">登录</button>
+						</div>
+						<div class="col-sm-6">
+							<button type="reset" class="btn btn-warning">清空</button>
+						</div>
+					</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+	
+	
+	<div class="modal fade" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+			  <div class="modal-header">登录信息</div>
+			  <div class="modal-body">登录成功</div>
+				<div class="modal-footer">	
+				</div>
+	    </div>
+	  </div>
+	</div>
+
+	
+	<script type="text/javascript" src="lib/js/jquery.js" ></script>
+	<script type="text/javascript" src="lib/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="lib/js/bootstrap.js" ></script>
+	<script type="text/javascript" src="lib/js/login.js"></script>
+</body>
+</html>
