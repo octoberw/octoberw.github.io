@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			.pic{
+				width: 404px;
+				height: 500px;
+				margin: 100px auto;
+				position: relative;
+			}
+			.pic .sPic{
+				width: 200px;
+				height: 200px;
+				border: 1px black solid;
+				position: absolute;
+				
+			}
+			.sBox{
+				width: 100px;
+				height: 100px;
+				left: 0;
+				top: 0;
+				background: rgba(0,0,0,0.4);
+				position: absolute;
+				z-index: 1;
+				display: none;
+			}
+			.pic .bPic{
+				width: 200px;
+				height: 200px;
+				border: 1px black solid;
+				position: absolute;
+				left: 200px;
+				overflow: hidden;
+				display: none;				
+			}
+			.pic .bPic img{
+				width: 402px;
+				height: 402px;
+				top: 0px;
+				left: 0px;
+				position: absolute;
+			}
+			.pic .xxx{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pic">
+			<div class="sBox"></div>
+			<img class="sPic" src="img/landscape.jpg"/>
+			<div class="xxx"></div>
+			<div class="bPic">
+				<img src="img/landscape.jpg"/>	
+			</div>
+		</div>
+	</body>
+</html>
+<script src="JQ/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.pic .xxx').mousemove(function(e){
+			if(e.offsetX<=50)
+				e.offsetX=50
+			if(e.offsetX>=150)
+				e.offsetX=150
+			if(e.offsetY<=50)
+				e.offsetY=50
+			if(e.offsetY>=150)
+				e.offsetY=150
+			$('.sBox').css({
+				left:e.offsetX-50,
+				top:e.offsetY-50,
+			})
+			$('.pic .bPic').css(
+				'display','block'
+			)
+			$('.sBox').css(
+				'display','block'
+			)
+			$('.bPic img').css({
+				left:-(e.offsetX-50)*2,
+				top:-(e.offsetY-50)*2
+			})
+		});
+		$('.pic .xxx').mouseleave(function(e){
+			$('.pic .bPic').css(
+				'display','none'
+			)
+			$('.sBox').css(
+				'display','none'
+			)
+		})
+	});
+</script>
+
+
