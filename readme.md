@@ -1,4 +1,4 @@
-[主页：](https://octoberw.github.io) https://octoberw.github.io
+主页：[https://octoberw.github.io](https://octoberw.github.io)
 
 github使用笔记总结：
 
