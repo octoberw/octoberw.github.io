@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<style type="text/css">
+		tr,th{
+			width: 150px;
+		}
+		.tou{
+			background-color: #ccc;
+		}
+		.yi,.san{
+			background-color: lightblue;
+		}
+		.er,.si{
+			background-color: lightyellow;
+		}
+		.co{
+			background-color: yellow;
+		}
+</style>
+</head>
+<body>
+	<table id="aijquery" border="1" cellspacing="0" align="center" >
+		<caption style="margin-bottom: 10px; font-size: 16px; font-weight: bold">员工信息</caption>
+		<thead class="tou">
+			<th></th>
+			<th>姓名</th>
+			<th>薪水</th>
+			<th>年龄</th>
+		</thead>
+		<tbody>
+			<tr class="yi">
+				<td><input type="checkbox"></td>
+				<td>张三</td>
+				<td>20000</td>
+				<td>23</td>
+			</tr>
+			<tr class="er">
+				<td><input type="checkbox"></td>
+				<td>李四</td>
+				<td>20000</td>
+				<td>23</td>
+			</tr>
+			<tr class="san">
+				<td><input type="checkbox"></td>
+				<td>王五</td>
+				<td>20000</td>
+				<td>23</td>
+			</tr>
+			<tr class="si">
+				<td><input type="checkbox"></td>
+				<td>马六</td>
+				<td>20000</td>
+				<td>23</td>
+			</tr>
+		</tbody>
+	</table>
+	<script>
+		$(document).ready(function(){
+			$("input").on('click',function(e){
+				$(this).is(':checked')?
+					$(this).parents('tr').addClass("co"):
+					$(this).parents('tr').removeClass("co")
+				})	
+			})
+	</script>
+</body>
+</html>
