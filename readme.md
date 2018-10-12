@@ -51,4 +51,9 @@ java Script：
 [https://octoberw.github.io/js贪吃蛇.html](https://octoberw.github.io/js贪吃蛇.html)
 
 
+jQuery考试：
+
+[https://octoberw.github.io/选中复选框高亮.html](https://octoberw.github.io/选中复选框高亮.html)
+[https://octoberw.github.io/jQ的放大镜效果.html](https://octoberw.github.io/jQ的放大镜效果.html)
+
 
